@@ -224,7 +224,6 @@ section.atualizacao-cadastral .cx-att-cadastral .cx-att-button{
 section.formas-de-retirada{
     background: #EEEEFF;
     height: 500px;
-    position: absolute;
 }
 section.formas-de-retirada .retirada-title h2{
     text-align: center;
@@ -234,16 +233,86 @@ section.formas-de-retirada .retirada-title h2{
 
 section.formas-de-retirada .retirada-cards-main{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     align-content: flex-start;
     margin-left: 15px;
 }
 
 section.formas-de-retirada .retirada-cards-main .retirada-cards{
-    width: 130px;
-    height: 250px;
-    margin: 30px;
+    width: 250px;
+    height: 320px;
     background: #fff;
     border-radius: 3px;
+    margin: 30px 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1), 0px 4px 4px 2px rgba(136, 136, 153, 0.04);
+}
+
+section.formas-de-retirada .retirada-cards-main .retirada-cards .card-title {
+    width: fit-content;
+    margin-top: 15px;
+    color: #224499;
+}
+.card-title span {
+    font-weight: 700;
+    font-size: 22px;
+}
+.card-subtitle{
+    width: fit-content;
+    margin-top: 5px;
+}
+.card-subtitle span {
+    font-size: 14px;
+    color: #224499;
+}
+.card-img{
+    width: fit-content;
+    margin-top: 10px;
+}
+.card-img img {
+    width: 200px;
+    height: 160px;
+}
+.card-btn{
+    width: fit-content;
+    margin-top: 10px;
+}
+
+.card-info{
+    text-align: center;
+    width: 450px;
+}
+.card-info span{
+    font-size: 12px;
+    color:  #224499;
+}
+.card-info span a{
+    text-decoration: underline;
+    font-weight: 700;
+}
+.card-info span a:active{
+    color: #224499;
+}
+
+/* seção de informe */
+
+section.quote-info .quote-info-bg{
+    width: 600px;
+    height: 200px;
+    background: #F2F2FF;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 10%), 0px 4px 4px 2px rgb(136 136 153 / 4%);
+    border-radius: 5px;
+    margin-top: 15px;
+}
+.quote-info-bg div {
+    margin-left: 30px;
+    width: 85%;
+}
+.quote-title {
+    font-weight: 700;
+    font-size: 18px;
+}
+.quote-subtitle span {
+    font-size: 14px;
+    line-height: 1.7em;
 }
