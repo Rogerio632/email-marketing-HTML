@@ -1,0 +1,249 @@
+*{
+    font-family: 'montserrat', sans-serif;
+    width: 600px;
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+hr{
+    width: 100px;
+    height: 4px;
+    background: #EEEEFF;
+    border: none;
+}
+li{
+    list-style: none;
+}
+/* header */
+
+section.header{
+    display: flex;
+    background: rgb(215, 215, 215);
+    justify-content: center;
+
+  }
+section.header header.logo{
+    width: 100px;
+  }
+section.header header.logo img{
+    height: 100px;
+    width: 100px;
+    padding: 10px 10px;
+}
+section.header nav.title{
+  width: auto;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+}
+
+/* boleto-disponivel  */
+
+section.boleto-disponivel{
+    height: 100px;
+    background: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+section.boleto-disponivel div.boleto-title{
+    font-weight: 700;
+    font-size: 28px;
+}
+section.boleto-disponivel div.boleto-subtitle{
+    margin-top: 5px;
+    font-size: 16px;
+}
+section.boleto-disponivel div.boleto-subtitle span.mes-referencia{
+    font-weight: 700;
+}
+
+/* saudações */
+
+section.saudacoes{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+section.saudacoes div.saudacoes-title{
+    font-weight: 700;
+    font-size: 24px;
+}
+section.saudacoes div.saudacoes-subtitle{
+    width: 450px;
+    margin-top: 10px;
+    font-weight: 400;
+    line-height: 30px;
+}
+section.saudacoes div.saudacoes-vencimento{
+    margin-top: 10px;
+    font-size: 16px;
+}
+section.saudacoes div.saudacoes-vencimento span{
+    font-weight: 700;
+}
+
+/* divulgação do cabemce-app */
+
+section.cabemce-app{
+    margin-top: 40px;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2px;
+
+}
+section.cabemce-app div.app-titulo{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 35px;
+    width: 440px;
+    margin-left: 5px;
+}
+
+section.cabemce-app div.app-list-total{
+    display: flex;
+    width: 600px;
+}
+
+section.cabemce-app ul.app-list{
+    width: 175px;
+}
+
+section.cabemce-app ul.app-list{
+    font-size: 18px;
+    margin-top: 10px;
+
+}
+
+section.cabemce-app ul.app-list li{
+    display: flex;
+    margin-top: 25px;
+}
+section.cabemce-app ul.app-list li > span{
+    margin-left: 10px;
+}
+
+.btn{
+    border: none;
+    background: linear-gradient(90deg, #EE1122, 45%, #990000 75%);
+    color: white;
+    border-radius: 5px;
+    width: 225px;
+    height: 50px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    padding: 10px;
+    }
+.btn:hover{
+    cursor: pointer;
+    color: rgb(255, 215, 215);
+}
+.btn span{
+    width: fit-content;
+    }
+section.cabemce-app ul.app-list li img{
+    width: 32px;
+    height: 32px;
+}
+section.cabemce-app div.app-img{
+    display: flex;
+    margin-top: 3px;
+}
+section.cabemce-app div.app-img img{
+    width: 600px;
+    height: 300px;
+}
+
+/* seção da atualização cadastral */
+
+.background-blue{
+    height: 250px;
+    background: linear-gradient(90deg, #24459D 1.78%, #5365EB 115.03%);
+    
+    margin-top: -12px;
+
+    text-align: right;
+    position: absolute;
+
+    width: 600px;
+}
+
+section.atualizacao-cadastral{
+    height: 238px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+section.atualizacao-cadastral .quote-lgpd{
+    color: #fff;
+    font-size: 10px;
+    text-align: left;
+    margin-left: 20px;
+    position: relative;
+    top: 85%;
+    display: flex;
+}
+
+section.atualizacao-cadastral .quote-lgpd img{
+    width: fit-content;
+}
+
+section.atualizacao-cadastral .cx-att-cadastral{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: -20px;
+}
+
+section.atualizacao-cadastral .cx-att-cadastral .cx-att-titulo h2{
+    font-size: 24px;
+    text-align: right;
+    width: 330px;
+    margin-right: 0;
+}
+section.atualizacao-cadastral .cx-att-cadastral .cx-att-subtitulo{
+    text-align: right;
+    margin-top: 5px;
+    width: 300px;
+    margin-right: 5px;
+}
+section.atualizacao-cadastral .cx-att-cadastral .cx-att-button{
+    margin-top: 20px;
+}
+
+/* seção formas de retirada  */
+
+section.formas-de-retirada{
+    background: #EEEEFF;
+    height: 500px;
+    position: absolute;
+}
+section.formas-de-retirada .retirada-title h2{
+    text-align: center;
+    margin-top: 30px;
+    color: #224499;
+}
+
+section.formas-de-retirada .retirada-cards-main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin-left: 15px;
+}
+
+section.formas-de-retirada .retirada-cards-main .retirada-cards{
+    width: 130px;
+    height: 250px;
+    margin: 30px;
+    background: #fff;
+    border-radius: 3px;
+}
