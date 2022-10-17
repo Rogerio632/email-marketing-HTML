@@ -47,6 +47,23 @@ a{
     margin-left: 20px;
     width: fit-content;
 }
+
+/* responsivo */
+
+@media (max-width: 900px){
+    *{
+        width: 100%;
+        }
+    section.boleto-disponivel{
+        height: 150px !important;
+    }
+    section.saudacoes div.saudacoes-subtitle{
+        width: fit-content;
+        line-height: 25px;
+        font-size: 16px;
+    }
+}
+
 /* header */
 
 section.header{
@@ -369,7 +386,9 @@ ul.important-list li{
 ul.important-list li a{
     color: #224499;
 }
-
+ul.important-list li a:hover {
+    color: #bb070e;
+}
 ul.important-list img{
     width: fit-content;
 }
@@ -383,5 +402,5 @@ blockquote.warn-mail p {
     font-weight: 700;
     font-size: 12px;
     text-align: center;
-    line-height: 1.04em;
+    line-height: 1.4em;
 }
