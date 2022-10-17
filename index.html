@@ -17,20 +17,20 @@
     <section class="boleto-disponivel">
         <div class="cx-boleto">
         <div class="boleto-title">SEU BOLETO JÁ ESTÁ DISPONÍVEL!</div>  
-        <div class="boleto-subtitle">Referência: <span class="mes-referencia">Dezembro de 2022</span></div>
+        <div class="boleto-subtitle">Referência: <span class="mes-referencia">{{mes}} de {{ano}}</span></div>
         </div>
     </section>
     
     <section class="saudacoes">
         <div class="cx-saudacoes">
             <div class="saudacoes-title">
-                Olá, Antonio!
+                Olá, {{nome}}!
             </div>
             <div class="saudacoes-subtitle">
                 Seu Boleto Hapvida referente ao mês de Dezembro já está disponível.
             </div>
             <div class="saudacoes-vencimento">
-                <span>Vencimento:</span> 09 de Janeiro de 2023
+                <span>Vencimento:</span> {{dia}} de {{mes}} de {{ano}}
             </div>
         </div>
     </section>
@@ -53,7 +53,13 @@
             <li><img src="img/4-doc.svg"><span>Novidades e Promoções Exclusivas</span></li>
             <li>
             <div class="btn-list">
-                <button class="btn"><span>BAIXAR AGORA</span></button>
+                <button class="btn"><span>
+                    <a href="https://play.google.com/store/apps/details?id=com.cabemce.appcabemce">
+                    BAIXAR AGORA
+                    <img src="img/download-btn.svg" alt="">
+                    </a>
+                    
+                </span></button>
             </div>
             </li>
         </ul>
@@ -80,7 +86,11 @@
                     </span>
                 </div>
                 <div class="cx-att-button">
-                    <button class="btn"><span>ATUALIZAR MEUS DADOS</span></button>
+                    <button class="btn"><span>
+                        <a href="https://cabemce.com.br/2021/08/atualizacao-cadastral">
+                            ATUALIZAR MEUS DADOS
+                        </a>
+                </span></button>
                 </div>
             </div>
 
@@ -112,7 +122,13 @@
                     <img src="img/retirada-whatsapp.svg" alt="">
                 </div>
                 <div class="card-btn">
-                    <button class="btn"><span>ENVIAR MENSAGEM</span></button>
+                    <button class="btn"><span>
+                      <a href="https://bit.ly/3CC6JZf"> 
+                         ENVIAR MENSAGEM 
+                        <img src="img/btn-whatsapp.svg" alt="">
+                    </a>
+                        
+                    </span></button>
                 </div>
             </div>
             <div class="retirada-cards">
@@ -126,7 +142,12 @@
                     <img src="img/retirada-email.svg" alt="">
                 </div>
                 <div class="card-btn">
-                    <button class="btn"><span>ACESSAR NOSSO SITE</span></button>
+                    <button class="btn"><span>
+                       <a href="https://boleto.cabemce.com.br/">
+                         ACESSAR SITE 
+                        <img src="img/btn-arrow.svg" alt=""></a>
+                       
+                    </span></button>
                 </div>
             </div>
         </div>
@@ -147,13 +168,31 @@
             </div>
             <div class="quote-title">
                <span>IMPORTANTE</span>
-            </div>
-            <div class="quote-subtitle">
-                <span>Afim de promover o melhor equilíbrio financeiro para o funcionamento dos Planos de Saúde, contratos com boletos vencidos a mais de 30 dias serão cancelados.
+                <p class="quote-subtitle">Afim de promover o melhor equilíbrio financeiro para o funcionamento dos Planos de Saúde, contratos com boletos vencidos a mais de 30 dias serão cancelados.
                     Dessa forma, é importante que o pagamento seja feito rigorosamente em dia.</span>
             </div>
         </div>
     </section>
+
+   <footer class="rodape">
+    <ul class="important-list">
+        <li><a href="https://www.instagram.com/cabemce/">Instagram</a></li>
+        <img src="img/elipse-quote.svg" alt="divisória">
+        <li><a href="https://cabemce.com.br/2021/08/atualizacao-cadastral">Atualização Cadastral</a></li>
+        <img src="img/elipse-quote.svg" alt="divisória">
+        <li><a href="https://linktr.ee/cabemce">Contatos</a></li>
+        <img src="img/elipse-quote.svg" alt="divisória">
+        <li><a href="">Não quero mais receber email</a></li>
+    </ul>
+
+    <blockquote class="warn-mail">
+        <p>
+        Por gentileza, não responda este email. 
+        Este email foi enviado por um sistema automatizado que não processa respostas.
+        </p>
+    </blockquote>
+
+   </footer>
 
 
 </body>
