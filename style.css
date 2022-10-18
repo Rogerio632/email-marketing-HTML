@@ -4,6 +4,7 @@
     margin: auto;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 
 }
 hr{
@@ -54,13 +55,80 @@ a{
     *{
         width: 100%;
         }
+        .background-blue{
+            height: 300px !important;
+            width: 100% !important;
+        }
+        section.header {
+            flex-direction: column;
+        }
     section.boleto-disponivel{
         height: 150px !important;
+    }
+    section.header header.logo {
+        display: flex;
+    }
+    section.header nav.title {
+        font-size: 16px !important;
+        width: 75% !important;
+        text-align: center;
+        margin-bottom: 10px;
     }
     section.saudacoes div.saudacoes-subtitle{
         width: fit-content;
         line-height: 25px;
         font-size: 16px;
+    }
+    .logo img{
+        width: 100px !important;
+        height: 100px !important;
+    }
+    section.saudacoes div.saudacoes-subtitle{
+        width: 100% !important;
+    }
+    section.cabemce-app div.app-titulo{
+        width: 100% !important;
+        font-size: 22px !important;
+    }
+    section.cabemce-app ul.app-list{
+        width: 100% !important;
+    }
+    section.cabemce-app ul.app-list li > span{
+        font-size: 16px !important;
+    }
+    .app-img{
+        display: none !important;
+    }
+    section.atualizacao-cadastral .quote-lgpd{
+        margin-left: 5px !important;
+    }
+    section.atualizacao-cadastral .cx-att-cadastral{
+        margin-top: 30px !important;
+    }
+    .quote-lgpd span{
+        margin-left: 5px;
+    }
+    section.formas-de-retirada {
+        background: #EEEEFF;
+        height: fit-content;
+        margin-top: 13%;
+    }
+    .retirada-title {
+        position: relative;
+        top: 40px !important;
+        width: 70% !important;
+    }
+    section.formas-de-retirada .retirada-title h2 {
+        margin-bottom: 30px;
+        text-align: center;
+        color: #224499;
+        font-size: 22px;
+        width: 100% !important;
+    }
+    section.formas-de-retirada .retirada-cards-main{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px !important;
     }
 }
 
