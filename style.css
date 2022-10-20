@@ -4,8 +4,6 @@
     margin: auto;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
-
 }
 hr{
     width: 100px;
@@ -54,7 +52,8 @@ a{
 @media (max-width: 900px){
     *{
         width: 100%;
-        }
+        overflow-x: hidden;
+    }
         .background-blue{
             height: 300px !important;
             width: 100% !important;
@@ -110,13 +109,8 @@ a{
     }
     section.formas-de-retirada {
         background: #EEEEFF;
-        height: fit-content;
+        height: fit-content !important;
         margin-top: 13%;
-    }
-    .retirada-title {
-        position: relative;
-        top: 40px !important;
-        width: 70% !important;
     }
     section.formas-de-retirada .retirada-title h2 {
         margin-bottom: 30px;
@@ -126,10 +120,47 @@ a{
         width: 100% !important;
     }
     section.formas-de-retirada .retirada-cards-main{
+        flex-direction: column !important;
+        align-content: center !important;
+        margin-top: 20px !important;
+        margin-left: 0 !important;
+    }
+    .card-info{
+        width: 320px !important;
+        height: 76px;
+    }
+    section.quote-info .quote-info-bg
+    .quote-icon{
+        display: none;
+    }
+    .quote-title{
+        margin-top: 10px;
+    }
+    
+    p.quote-subtitle{
+        line-height: 1.5em !important;
+        width: fit-content !important;
+    }
+    ul.important-list{
         flex-direction: column;
         align-items: center;
-        margin-top: 20px !important;
     }
+    ul.important-list li{
+        padding: 15px;
+        margin: 10px;
+        border: 1px solid #990000;
+    }
+    ul.important-list li:hover, ul.important-list li a:hover{
+        background-color: #ff1f1f;
+        color: #fff !important;
+    }
+    ul.important-list img{
+        display: none;
+    }
+    blockquote.warn-mail p{
+        width: 80%;
+    }
+    
 }
 
 /* header */
@@ -352,7 +383,7 @@ section.formas-de-retirada .retirada-cards-main .retirada-cards{
     height: 320px;
     background: #fff;
     border-radius: 3px;
-    margin: 30px 20px;
+    margin: 20px 20px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1), 0px 4px 4px 2px rgba(136, 136, 153, 0.04);
 }
 
@@ -389,6 +420,7 @@ section.formas-de-retirada .retirada-cards-main .retirada-cards .card-title {
 .card-info{
     text-align: center;
     width: 450px;
+
 }
 .card-info span{
     font-size: 12px;
